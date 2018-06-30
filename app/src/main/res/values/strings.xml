@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Code Giste</string>
+
+    <string-array name="countries">
+        <item>country 1</item>
+        <item>country 2</item>
+        <item>country 3</item>
+        <item>country 4</item>
+        <item>country 5</item>
+    </string-array>
+</resources>
