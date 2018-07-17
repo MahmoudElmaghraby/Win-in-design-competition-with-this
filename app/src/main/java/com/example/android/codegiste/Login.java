@@ -8,7 +8,11 @@ import android.widget.Button;
 
 public class Login extends AppCompatActivity {
 
+    //Initialize the register button
     Button registerBtn ;
+
+    //Initialize the login button to move to the main screen activity
+    Button loginBtn ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +24,10 @@ public class Login extends AppCompatActivity {
         //Get the required button
         registerBtn = (Button) findViewById(R.id.registerButton);
 
-        //Setup the button when it clicked
+        //Select the button to move to the next activity
+        loginBtn = (Button) findViewById(R.id.login_button);
+
+        //Setup the register button when it clicked
         registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,5 +37,16 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        //Setup the login button to move to the next activity when the button is clicked
+        loginBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login.this , MainScreen.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

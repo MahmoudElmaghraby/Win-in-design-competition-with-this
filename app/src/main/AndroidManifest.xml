@@ -19,7 +19,17 @@
         <activity android:name=".Login" />
         <activity android:name=".Register" />
         <activity android:name=".PhoneAuth" />
-        <activity android:name=".Verification"></activity>
+        <activity android:name=".Verification" />
+        <activity android:name=".MainScreen" />
+        <activity android:name=".Map" />
+        <activity android:name=".LocateBtn" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".History" />
+        <activity android:name=".Favorite" />
     </application>
 
 </manifest>

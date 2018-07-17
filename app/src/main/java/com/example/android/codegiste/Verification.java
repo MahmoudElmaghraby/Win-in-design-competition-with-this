@@ -1,5 +1,6 @@
 package com.example.android.codegiste;
 
+import android.content.Intent;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,9 @@ public class Verification extends AppCompatActivity {
 
     //Initialize the counter button
     Button resendBtn ;
+
+    //Initialize the verity button
+    Button verificationBtn ;
 
     //Initialize the seconds text view
     TextView secondsTextView ;
@@ -40,6 +44,9 @@ public class Verification extends AppCompatActivity {
         //Select the resend button from the layout
         resendBtn = (Button) findViewById(R.id.resend_button);
 
+        //Select the button to use in move to the second activity
+        verificationBtn = (Button) findViewById(R.id.verification_button);
+
         //Select the seconds text view from the layout
         secondsTextView = (TextView) findViewById(R.id.seconds_text_view);
 
@@ -48,6 +55,15 @@ public class Verification extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startTimer(); //The method responsible to start the timer when the button clicked
+            }
+        });
+
+        //Move to the second activity when the button is clicked
+        verificationBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Verification.this , MainScreen.class );
+                startActivity(intent);
             }
         });
     }

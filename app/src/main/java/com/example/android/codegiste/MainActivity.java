@@ -8,7 +8,7 @@ import android.os.Bundle;
 public class MainActivity extends AppCompatActivity {
 
     //The time for splash screen (contain the logo)
-    public static int SPLASH_TIME_OUT = 4000 ; // 4000 = 4 seconds
+    public static int SPLASH_TIME_OUT = 2000 ; // 4000 = 4 seconds
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
