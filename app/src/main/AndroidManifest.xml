@@ -30,6 +30,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".History" />
         <activity android:name=".Favorite" />
+        <activity android:name=".Add"></activity>
     </application>
 
 </manifest>

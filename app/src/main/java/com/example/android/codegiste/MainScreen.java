@@ -19,6 +19,8 @@ import android.widget.Toast;
 
 public class MainScreen extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Intent intent ;
+
     //Initialize the list view
     ListView listView ;
 
@@ -133,7 +135,7 @@ public class MainScreen extends AppCompatActivity implements NavigationView.OnNa
             locateBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainScreen.this , LocateBtn.class);
+                    intent = new Intent(MainScreen.this , LocateBtn.class);
                     startActivity(intent);
                 }
             });
@@ -142,7 +144,7 @@ public class MainScreen extends AppCompatActivity implements NavigationView.OnNa
             favoriteBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(MainScreen.this , Favorite.class);
+                    intent = new Intent(MainScreen.this , Favorite.class);
                     startActivity(intent);
                 }
             });
@@ -184,15 +186,15 @@ public class MainScreen extends AppCompatActivity implements NavigationView.OnNa
             //If the the home profile is clicked
             case R.id.profile :
                 //Go to Profile activity
-                Intent profileIntent = new Intent(MainScreen.this , Profile.class);
-                startActivity(profileIntent);
+                intent = new Intent(MainScreen.this , Profile.class);
+                startActivity(intent);
                 break;
 
             //If the the home history is clicked
             case R.id.history :
                 //Go to History activity
-                Intent historyIntent = new Intent(MainScreen.this , History.class);
-                startActivity(historyIntent);
+                intent = new Intent(MainScreen.this , History.class);
+                startActivity(intent);
                 break;
 
         }
